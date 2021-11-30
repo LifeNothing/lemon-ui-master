@@ -1,0 +1,57 @@
+{
+  "name": "lemon-ui-vue",
+  "version": "1.0.0",
+  "description": "这是一个UI框架",
+  "main": "dist/index.js",
+  "scripts": {
+    "test-watch": "parcel watch test/* --no-cache",
+    "test-start": "karma start",
+    "test": "parcel build test/* --no-cache --no-minify && karma start --single-run",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "build-index": "npx parcel build index.js --no-minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wuwenbang/lemon-ui.git"
+  },
+  "keywords": [
+    "vue",
+    "ui"
+  ],
+  "author": "pray",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wuwenbang/lemon-ui/issues"
+  },
+  "homepage": "https://github.com/wuwenbang/lemon-ui#readme",
+  "dependencies": {
+    "chai": "*",
+    "chai-spies": "^1.0.0",
+    "global": "^4.4.0",
+    "parcel": "^1.12.4",
+    "vue": "^2.6.11",
+    "vue-hot-reload-api": "^2.3.4"
+  },
+  "devDependencies": {
+    "@vue/component-compiler-utils": "^3.2.0",
+    "highlight.js": "^10.1.2",
+    "karma": "^5.1.1",
+    "karma-chai": "^0.1.0",
+    "karma-chai-spies": "^0.1.4",
+    "karma-chrome-launcher": "^3.1.0",
+    "karma-mocha": "^2.0.1",
+    "karma-sinon-chai": "^2.0.2",
+    "mocha": "^8.1.0",
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.26.10",
+    "sass-loader": "^9.0.3",
+    "sinon": "^9.0.2",
+    "sinon-chai": "^3.5.0",
+    "vue-template-compiler": "^2.6.11",
+    "vuepress": "^1.5.3"
+  },
+  "alias": {
+    "vue": "./node_modules/vue/dist/vue.common.js"
+  }
+}
